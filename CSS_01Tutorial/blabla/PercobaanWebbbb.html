@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Copperplate, Papyrus, fantasy;
+  padding: 10px;
+  background: #f1f1f1;
+  color: #f1f1f1;
+}
+
+/* Header/Blog Title */
+.header {
+  padding: 30px;
+  text-align: center;
+  background: rgb(0, 0, 0);
+}
+
+.header h1 {
+  font-size: 50px;
+}
+
+/* Style the top navigation bar */
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+}
+
+/* Style the topnav links */
+.topnav a {
+  float: left;
+  display: block;
+  color: rgb(179, 129, 91);
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Change color on hover */
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Create two unequal columns that floats next to each other */
+/* Left column */
+.leftcolumn {   
+  float: left;
+  width: 75%;
+}
+
+/* Right column */
+.rightcolumn {
+  float: left;
+  width: 25%;
+  background-color: #232222;
+  padding-left: 20px;
+}
+
+/* Fake image */
+.fakeimg {
+  background-color: #aaa;
+  width: 100%;
+  padding: 20px;
+}
+
+/* Add a card effect for articles */
+.card {
+  background-color: rgb(0, 0, 0);
+  padding: 20px;
+  margin-top: 100px;
+}
+
+/* Clear floats after the columns */
+.row::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Footer */
+.footer {
+  padding: 20px;
+  text-align: center;
+  background: #232222;
+  margin-top: 20px;
+}
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+  .leftcolumn, .rightcolumn {   
+    width: 100%;
+    padding: 0;
+  }
+}
+
+/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+@media screen and (max-width: 400px) {
+  .topnav a {
+    float: none;
+    width: 100%;
+  }
+}
+</style>
+</head>
+<body style="background-color: rgb(61, 61, 61);">
+
+<div class="header">
+  <h1>Website Diandra</h1>
+  <p>Resize the browser window to see the effect.</p>
+</div>
+
+<div class="topnav">
+  <a href="c:\W3School\css-tutorial\CSS_01Tutorial\CSS59float-01.html">float</a>
+  <a href="c:\W3School\css-tutorial\CSS_02Advanced\CSSflexbox.html">flex-box</a>
+  <a href="#">Link</a>
+  <a href="#" style="float:right">Link</a>
+</div>
+
+<div class="row">
+  <div class="leftcolumn">
+    <div class="card">
+      <h2>Tempat Elaina</h2>
+      <h5>Kampung Halaman, 07 Maret 2024</h5>
+      <div class="" style="height:200px;"><img src="c:\Users\andri\OneDrive\Gambar\Captures\1107572.png" alt="" style="height: 480px;" width="880"></div>
+      <p>Pemandangan Rumah ku bersama Kekasih ku Elaina</p>
+      <p></p>
+    </div>
+    <div class="card">
+      <h2>Bintang Aurora</h2>
+      <h5>Pemandangan, 09 Maret 2024</h5>
+      <div class="" style="height:200px;"><img src="c:\Users\andri\OneDrive\Gambar\Captures\img_lights.jpg"alt="" style="height:480px;" width="880"></div>
+      <p>Pemandangan yang indah bersama Kekasih ku Elaina</p>
+      <p></p>
+    </div>
+  </div>
+  <div class="rightcolumn">
+    <div class="card">
+      <h2>My Waifu</h2>
+      <div class="" style="height:10px;"><img src="c:\Users\andri\OneDrive\Gambar\Captures\elaina-drinking-coffee-near-window-thumb.jpg"style="height:100px;" widht="500"></div>
+      <p>Dia adalah waifu yang paling ku sayang</p>
+    </div>
+    <div class="card">
+      <h3>Popular Post</h3>
+      <div class=""><p><img src="c:\Users\andri\OneDrive\Gambar\Rol Kamera\1256ebc8ee8689e1c6e80c4f665faae4.jpg"height="70" width="70"></p></div>
+      <div class=""><p><img src="c:\Users\andri\OneDrive\Gambar\Rol Kamera\bb9f5b454a370f1e63fdfecc14ed80cb.jpg"height="70" width="70"></p></div>
+      <div class=""><p><img src="c:\Users\andri\OneDrive\Gambar\Rol Kamera\519941.512.webp" alt="" height="70" width="70"></p></div>
+    </div>
+    <div class="card">
+      <h3>Follow Me</h3>
+      <p>Some text..</p>
+    </div>
+  </div>
+</div>
+
+<div class="footer">
+  <h2>I Love Anime</h2>
+</div>
+
+</body>
+</html>
+
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+img {
+  float: right;
+}
+</style>
+</head>
+<body align="center">
+
+<h2>Elaina And Diandra</h2>
+
+<p>Cerita ini sudah ada pada tahun 2011</p>
+
+<p><img src="c:\Users\andri\OneDrive\Gambar\Rol Kamera\avatars-zqSgm1LKyDPzUllM-yFIBOA-t500x500.jpg" alt="Elaina" style="width:120px;height:120px;margin-left:15px;">
+    Terpukau oleh kisah Niké, seorang penyihir yang menjelajahi dunia, Elaina kemudian bertekad untuk melakukan hal yang serupa.
+    Tekadnya dalam mempelajari buku dan sihir membuat Elaina menjadi penyihir termuda yang lulus dari akademi.
+     Namun, untuk menjadi penyihir resmi dia harus menerima pelatihan dari penyihir senior, dan banyak dari para penyihir tersebut yang tidak percaya diri untuk menerimanya,
+      karena dia memiliki bakat yang luar biasa. Begitulah hingga dia bertemu Fran, seorang "Penyihir Debu Bintang", dan ia menerimanya. Setelah Elaina mendapatkan gelarnya, "Penyihir Kelabu",
+       dia kemudian memulai perjalanannya ke seluruh dunia, mengunjungi dan menghadapi semua jenis orang dan tempat.</p>
+
+</body>
+<hr>
+<hr>
+</html>
+
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+.flex-container {
+  display: flex;
+  flex-wrap: nowrap;
+  background-color: rgb(0, 0, 0);
+}
+
+.flex-container > div {
+  background-color: #f1f1f1;
+  width: 100px;
+  margin: 10px;
+  text-align: center;
+  line-height: 20px;
+  font-size: 30px;
+}
+</style>
+</head>
+<body>
+<h1>Diandra Waifu</h1>
+
+<div class="flex-container">
+  <div><img src="c:\Users\andri\OneDrive\Gambar\Rol Kamera\bb9f5b454a370f1e63fdfecc14ed80cb.jpg" alt="" height="100" width="100" ></div>
+  <div><img src="c:\Users\andri\OneDrive\Gambar\Rol Kamera\a1fe3773d703fe876463f4819fcab151.jpg" alt="" height="100" width="100" ></div>
+  <div><img src="c:\Users\andri\OneDrive\Gambar\Rol Kamera\ab67616d0000b2734581668a098a17c03e480726.jpg" alt="" height="100" width="100" ></div>  
+  <div><img src="c:\Users\andri\OneDrive\Gambar\Rol Kamera\d81fe6d70a185a7db799198796b149ff.jpg" alt="" height="100" width="100" ></div>
+  <div><img src="c:\Users\andri\OneDrive\Gambar\Rol Kamera\hh979e007-a7a9-ca1a-094b-4be730ae21dc.jpg" alt="" height="100" width="100" ></div>
+  <div><img src="c:\Users\andri\OneDrive\Gambar\Rol Kamera\yuuki.jpeg" alt="" height="100" width="100" ></div>  
+  <div><img src="c:\Users\andri\OneDrive\Gambar\Rol Kamera\mmaxresdefault.jpg" alt="" height="100" width="100" ></div>
+  <div><img src="c:\Users\andri\OneDrive\Gambar\Rol Kamera\1256ebc8ee8689e1c6e80c4f665faae4.jpg" alt="" height="100" width="100" ></div>
+  <div><img src="c:\Users\andri\OneDrive\Gambar\Rol Kamera\519941.512.webp" alt="" height="100" width="100" ></div>
+  <div><img src="c:\Users\andri\OneDrive\Gambar\Rol Kamera\avatars-zqSgm1LKyDPzUllM-yFIBOA-t500x500.jpg" alt="" height="100" width="100" ></div>
+</div>
+
+<p>Try to resize the browser window.</p>
+<p>A container with "flex-wrap: nowrap;" will never wrap its items.</p>
+<p><strong>Note:</strong> 10 waifu terkenal yang ada di Anime, tetapi masih ada banyak waifu yang lebih indah dari mereka</p>
+
+</body>
+</html>
